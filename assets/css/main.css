@@ -300,12 +300,29 @@ input, select, textarea {
 			margin: 3em 0;
 		}
 
+	.major svg
+	{
+		height: 80px;
+	}
+
+
 	.major span
 	{
 		color:  #5faab1;
 		font-weight: 500;
 	}
 
+	.major span a
+	{
+		text-decoration: none !important;
+	}
+
+	.major span a:hover
+	{
+		background-color: unset !important;
+		color: #5faab1 !important;
+		transition: color 300ms ease-out !important;
+	}
 
 
 	.align-left {
@@ -2755,7 +2772,7 @@ input, select, textarea {
 		header.major:after {
 			content: '';
 			border-bottom: solid 2px #e6e6e6;
-			display: block;
+			display: none;
 			width: 4em;
 			margin: 2em auto 0 auto;
 		}
@@ -2985,7 +3002,7 @@ input, select, textarea {
 	.wrapper {
 		padding: 4.5em 0 2.5em 0 ;
 		background-color: #ffffff;
-		border-bottom: solid 2px #eeeeee;
+		border-bottom: solid 0px #eeeeee;
 	}
 
 		.wrapper > .inner {
@@ -3201,10 +3218,67 @@ input, select, textarea {
 			.wrapper.style1 hr {
 				border-bottom-color: rgba(255, 255, 255, 0.25);
 			}
-
-		.wrapper.style2 {
-			background-color: #fbfbfb;
+		.wrapper.style2
+		 {
+			background-color: #ddeff0;
 			color: #999999;
+		}
+
+		.SkillsContainer
+		{
+			width: 68%;
+			margin: auto;
+		}
+		@media screen and (max-width: 736px) and (orientation: landscape) {
+
+		.SkillsContainer
+		{
+			width: 95%;
+			margin: auto;
+		}
+
+		}
+
+		@media screen and (max-width: 736px) and (orientation: portrait) {
+
+			.SkillsContainer
+			{
+				width: 95%;
+				margin: auto;
+			}
+		}
+
+		@media screen and (max-width: 480px) and (orientation: landscape) {
+
+			.SkillsContainer
+			{
+				width: 95%;
+				margin: auto;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) and (orientation: portrait) {
+
+			.SkillsContainer
+			{
+				width: 85%;
+				margin: auto;
+			}
+
+		}
+
+		.wrapper.style2 h4
+		{
+
+			text-align: center;
+		}
+
+		.wrapper.style2 h4 span
+		{
+			color:  #5faab1;
+
+			font-weight: 500;
 		}
 
 			.wrapper.style2 input[type="submit"],
@@ -3388,7 +3462,8 @@ input, select, textarea {
 
 			.wrapper.style2 a {
 				color: inherit;
-				border-bottom-color: #d6d6d6;
+				border-bottom-color: unset;
+				border-bottom: 0px;
 			}
 
 				.wrapper.style2 a:hover {
@@ -3401,6 +3476,11 @@ input, select, textarea {
 
 			.wrapper.style2 h1, .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
 				color: #828282;
+			}
+
+			.wrapper.style2 h2
+			{
+				color: #448e96;
 			}
 
 			.wrapper.style2 blockquote {
